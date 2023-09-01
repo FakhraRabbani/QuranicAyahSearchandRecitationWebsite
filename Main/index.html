@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Quran</title>
+        
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card mb-3 mt-5">
+                    <div class="card-header">Quran</div>
+                    <div class="mode-btn-div d-flex mt-2">
+                        <button class="btn btn-danger fa-solid fa-circle-half-stroke ml-auto" id="mode-button"></button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title heading">Enter ayah number: </h5>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control" id="input" placeholder="Ayah No" aria-label="Ayah No" aria-describedby="basic-addon2" min="1" max="6236">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="ayahTextBtn">Get ayah</button>
+                            </div>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="translationBtn">Get translation</button>
+                            </div>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="recitationBtn">Recite Ayah</button>
+                            </div>
+                        </div>
+
+                        <div id="show_Ayah">
+                            <h5>Ayah:</h5>
+                            <p id="displayArabic">ayat is this knasilkcnsxv dcbcfb</p>
+                        </div>
+                        <div id="showTranslation">
+                            <h5>Translation:</h5>
+                            <p id="displayTrans">ayat is this knasilkcnsxv dcbcfb</p>
+                        </div>
+                        <div id="audioQuran">
+                        </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../JS/app.js"></script>
+ </body>
+</html>

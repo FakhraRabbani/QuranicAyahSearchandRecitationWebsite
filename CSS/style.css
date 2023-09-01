@@ -1,0 +1,19 @@
+﻿body {
+    background-image: url('../images/backgroundQuran.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#show_Ayah, #showTranslation {
+    display: none;
+}
+
+.card {
+    background-color: #212529;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
