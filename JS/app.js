@@ -14,14 +14,32 @@ const cardMode = document.querySelector('.card');
 //Add event Listener
 ayahBtn.addEventListener('click', function (e) {
     e.preventDefault();
+
+    if(input.value === '')
+        showError('Enter an Ayah no');
+    else if(input.value < 1 || input.value> 6236)
+        showError('Please check your input. Enter a valid ayah No.');
+    else
     getAyah(input.value);
 })
 transBtn.addEventListener('click', function (e) {
     e.preventDefault();
+
+    if(input.value === '')
+        showError('Enter an Ayah no');
+    else if(input.value < 1 || input.value> 6236)
+        showError('Please check your input. Enter a valid ayah No.');
+    else
     getTranslation(input.value);
 })
 reciteBtn.addEventListener('click', function (e) {
     e.preventDefault();
+
+    if(input.value === '')
+        showError('Enter an Ayah no');
+    else if(input.value < 1 || input.value> 6236)
+        showError('Please check your input. Enter a valid ayah No.');
+    else
     getRecitation(input.value);
 })
 
